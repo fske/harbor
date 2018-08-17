@@ -19,11 +19,11 @@ import (
 	"os"
 	"testing"
 
-	"github.com/vmware/harbor/src/common"
-	"github.com/vmware/harbor/src/common/dao"
-	"github.com/vmware/harbor/src/common/dao/project"
-	"github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/common/utils/log"
+	"github.com/fske/harbor/src/common"
+	"github.com/fske/harbor/src/common/dao"
+	"github.com/fske/harbor/src/common/dao/project"
+	"github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/utils/log"
 )
 
 var createdUserGroupID int

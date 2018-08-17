@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: ui-app
-        image: vmware/harbor-ui:v1.2.0
+        image: fske/harbor-ui:v1.2.0
         imagePullPolicy: IfNotPresent
         env:
           - name: CONFIG_PATH

@@ -21,8 +21,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/vmware/harbor/src/common/models"
-	errutil "github.com/vmware/harbor/src/common/utils/error"
+	"github.com/fske/harbor/src/common/models"
+	errutil "github.com/fske/harbor/src/common/utils/error"
 )
 
 var (

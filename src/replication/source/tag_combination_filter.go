@@ -17,9 +17,9 @@ package source
 import (
 	"strings"
 
-	"github.com/vmware/harbor/src/common/utils/log"
-	"github.com/vmware/harbor/src/replication"
-	"github.com/vmware/harbor/src/replication/models"
+	"github.com/fske/harbor/src/common/utils/log"
+	"github.com/fske/harbor/src/replication"
+	"github.com/fske/harbor/src/replication/models"
 )
 
 // TagCombinationFilter implements Filter interface for merging tag filter items

@@ -1,6 +1,6 @@
 workspace:
   base: /drone
-  path: src/github.com/vmware/harbor
+  path: src/github.com/fske/harbor
 
 clone:
   git:
@@ -27,7 +27,7 @@ pipeline:
       status: success
 
   test-and-issue-build:
-    image: vmware/harbor-e2e-engine:1.41
+    image: fske/harbor-e2e-engine:1.41
     pull: true
     privileged: true
     environment:

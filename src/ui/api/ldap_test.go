@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/vmware/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/models"
 )
 
 func TestLDAPPing(t *testing.T) {

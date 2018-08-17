@@ -13,9 +13,9 @@ import (
 	"time"
 
 	"github.com/gomodule/redigo/redis"
-	"github.com/vmware/harbor/src/jobservice/job"
-	"github.com/vmware/harbor/src/jobservice/models"
-	"github.com/vmware/harbor/src/jobservice/utils"
+	"github.com/fske/harbor/src/jobservice/job"
+	"github.com/fske/harbor/src/jobservice/models"
+	"github.com/fske/harbor/src/jobservice/utils"
 )
 
 const (

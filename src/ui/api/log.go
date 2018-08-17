@@ -17,9 +17,9 @@ package api
 import (
 	"fmt"
 
-	"github.com/vmware/harbor/src/common/dao"
-	"github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/common/utils"
+	"github.com/fske/harbor/src/common/dao"
+	"github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/utils"
 )
 
 //LogAPI handles request api/logs

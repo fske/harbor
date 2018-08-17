@@ -21,7 +21,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/vmware/harbor/src/adminserver/auth"
+	"github.com/fske/harbor/src/adminserver/auth"
 )
 
 type fakeAuthenticator struct {

@@ -15,8 +15,8 @@
 package test
 
 import (
-	"github.com/vmware/harbor/src/replication"
-	"github.com/vmware/harbor/src/replication/models"
+	"github.com/fske/harbor/src/replication"
+	"github.com/fske/harbor/src/replication/models"
 )
 
 type FakePolicyManager struct {

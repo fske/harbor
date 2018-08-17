@@ -18,11 +18,11 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/vmware/harbor/src/common/dao"
-	persist_models "github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/replication"
-	"github.com/vmware/harbor/src/replication/models"
-	"github.com/vmware/harbor/src/ui/config"
+	"github.com/fske/harbor/src/common/dao"
+	persist_models "github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/replication"
+	"github.com/fske/harbor/src/replication/models"
+	"github.com/fske/harbor/src/ui/config"
 )
 
 // Manager defines the method a policy manger should implement

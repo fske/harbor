@@ -19,9 +19,9 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/vmware/harbor/src/common/models"
-	errutil "github.com/vmware/harbor/src/common/utils/error"
-	"github.com/vmware/harbor/src/common/utils/test"
+	"github.com/fske/harbor/src/common/models"
+	errutil "github.com/fske/harbor/src/common/utils/error"
+	"github.com/fske/harbor/src/common/utils/test"
 )
 
 func TestMain(m *testing.M) {

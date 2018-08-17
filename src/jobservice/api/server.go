@@ -9,9 +9,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/vmware/harbor/src/jobservice/config"
-	"github.com/vmware/harbor/src/jobservice/env"
-	"github.com/vmware/harbor/src/jobservice/logger"
+	"github.com/fske/harbor/src/jobservice/config"
+	"github.com/fske/harbor/src/jobservice/env"
+	"github.com/fske/harbor/src/jobservice/logger"
 )
 
 //Server serves the http requests.

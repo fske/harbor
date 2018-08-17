@@ -24,16 +24,16 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/vmware/harbor/src/common"
+	"github.com/fske/harbor/src/common"
 
 	"github.com/astaxie/beego"
 	"github.com/dghubble/sling"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/vmware/harbor/src/common/dao"
-	"github.com/vmware/harbor/src/common/dao/project"
-	common_http "github.com/vmware/harbor/src/common/http"
-	"github.com/vmware/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/dao"
+	"github.com/fske/harbor/src/common/dao/project"
+	common_http "github.com/fske/harbor/src/common/http"
+	"github.com/fske/harbor/src/common/models"
 )
 
 var (

@@ -23,11 +23,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/vmware/harbor/src/common"
-	"github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/common/utils"
-	http_error "github.com/vmware/harbor/src/common/utils/error"
-	"github.com/vmware/harbor/src/common/utils/log"
+	"github.com/fske/harbor/src/common"
+	"github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/utils"
+	http_error "github.com/fske/harbor/src/common/utils/error"
+	"github.com/fske/harbor/src/common/utils/log"
 )
 
 const (

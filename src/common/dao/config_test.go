@@ -17,7 +17,7 @@ package dao
 import (
 	"testing"
 
-	"github.com/vmware/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/models"
 )
 
 func TestAuthModeCanBeModified(t *testing.T) {

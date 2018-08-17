@@ -19,13 +19,13 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/vmware/harbor/src/common/dao"
-	"github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/common/utils"
-	"github.com/vmware/harbor/src/common/utils/log"
-	"github.com/vmware/harbor/src/common/utils/registry"
-	"github.com/vmware/harbor/src/common/utils/registry/auth"
-	"github.com/vmware/harbor/src/ui/config"
+	"github.com/fske/harbor/src/common/dao"
+	"github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/utils"
+	"github.com/fske/harbor/src/common/utils/log"
+	"github.com/fske/harbor/src/common/utils/registry"
+	"github.com/fske/harbor/src/common/utils/registry/auth"
+	"github.com/fske/harbor/src/ui/config"
 )
 
 // TargetAPI handles request to /api/targets/ping /api/targets/{}

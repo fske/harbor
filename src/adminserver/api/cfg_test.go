@@ -27,8 +27,8 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/vmware/harbor/src/adminserver/systemcfg"
-	"github.com/vmware/harbor/src/common"
+	"github.com/fske/harbor/src/adminserver/systemcfg"
+	"github.com/fske/harbor/src/common"
 )
 
 type fakeCfgStore struct {

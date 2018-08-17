@@ -19,16 +19,16 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/vmware/harbor/src/common/dao/project"
+	"github.com/fske/harbor/src/common/dao/project"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/vmware/harbor/src/common"
-	"github.com/vmware/harbor/src/common/dao"
-	"github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/replication"
-	rep_models "github.com/vmware/harbor/src/replication/models"
-	api_models "github.com/vmware/harbor/src/ui/api/models"
+	"github.com/fske/harbor/src/common"
+	"github.com/fske/harbor/src/common/dao"
+	"github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/replication"
+	rep_models "github.com/fske/harbor/src/replication/models"
+	api_models "github.com/fske/harbor/src/ui/api/models"
 )
 
 var (

@@ -20,14 +20,14 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/vmware/harbor/src/common/dao"
-	common_http "github.com/vmware/harbor/src/common/http"
-	common_job "github.com/vmware/harbor/src/common/job"
-	"github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/common/utils/log"
-	"github.com/vmware/harbor/src/replication/core"
-	api_models "github.com/vmware/harbor/src/ui/api/models"
-	"github.com/vmware/harbor/src/ui/utils"
+	"github.com/fske/harbor/src/common/dao"
+	common_http "github.com/fske/harbor/src/common/http"
+	common_job "github.com/fske/harbor/src/common/job"
+	"github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/utils/log"
+	"github.com/fske/harbor/src/replication/core"
+	api_models "github.com/fske/harbor/src/ui/api/models"
+	"github.com/fske/harbor/src/ui/utils"
 )
 
 // RepJobAPI handles request to /api/replicationJobs /api/replicationJobs/:id/log

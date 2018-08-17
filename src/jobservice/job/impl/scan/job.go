@@ -22,14 +22,14 @@ import (
 
 	"github.com/docker/distribution"
 	"github.com/docker/distribution/manifest/schema2"
-	"github.com/vmware/harbor/src/common"
-	"github.com/vmware/harbor/src/common/dao"
-	"github.com/vmware/harbor/src/common/job"
-	"github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/common/utils/clair"
-	"github.com/vmware/harbor/src/common/utils/log"
-	"github.com/vmware/harbor/src/jobservice/env"
-	"github.com/vmware/harbor/src/jobservice/job/impl/utils"
+	"github.com/fske/harbor/src/common"
+	"github.com/fske/harbor/src/common/dao"
+	"github.com/fske/harbor/src/common/job"
+	"github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/utils/clair"
+	"github.com/fske/harbor/src/common/utils/log"
+	"github.com/fske/harbor/src/jobservice/env"
+	"github.com/fske/harbor/src/jobservice/job/impl/utils"
 )
 
 // ClairJob is the struct to scan Harbor's Image with Clair

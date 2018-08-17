@@ -1,12 +1,12 @@
 package registry
 
 import (
-	"github.com/vmware/harbor/src/common/dao"
-	common_models "github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/common/utils/log"
-	"github.com/vmware/harbor/src/replication"
-	"github.com/vmware/harbor/src/replication/models"
-	"github.com/vmware/harbor/src/ui/utils"
+	"github.com/fske/harbor/src/common/dao"
+	common_models "github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/utils/log"
+	"github.com/fske/harbor/src/replication"
+	"github.com/fske/harbor/src/replication/models"
+	"github.com/fske/harbor/src/ui/utils"
 )
 
 // TODO refacotor the methods of HarborAdaptor by caling Harbor's API

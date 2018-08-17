@@ -21,14 +21,14 @@ import (
 	"time"
 
 	"github.com/garyburd/redigo/redis"
-	"github.com/vmware/harbor/src/common"
-	common_http "github.com/vmware/harbor/src/common/http"
-	"github.com/vmware/harbor/src/common/http/modifier/auth"
-	"github.com/vmware/harbor/src/common/registryctl"
-	reg "github.com/vmware/harbor/src/common/utils/registry"
-	"github.com/vmware/harbor/src/jobservice/env"
-	"github.com/vmware/harbor/src/jobservice/logger"
-	"github.com/vmware/harbor/src/registryctl/client"
+	"github.com/fske/harbor/src/common"
+	common_http "github.com/fske/harbor/src/common/http"
+	"github.com/fske/harbor/src/common/http/modifier/auth"
+	"github.com/fske/harbor/src/common/registryctl"
+	reg "github.com/fske/harbor/src/common/utils/registry"
+	"github.com/fske/harbor/src/jobservice/env"
+	"github.com/fske/harbor/src/jobservice/logger"
+	"github.com/fske/harbor/src/registryctl/client"
 )
 
 const (

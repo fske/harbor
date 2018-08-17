@@ -18,8 +18,8 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/common/utils/clair/test"
+	"github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/utils/clair/test"
 )
 
 var (

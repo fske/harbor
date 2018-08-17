@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"net/http"
 
-	common_http "github.com/vmware/harbor/src/common/http"
-	"github.com/vmware/harbor/src/common/http/modifier/auth"
-	reg "github.com/vmware/harbor/src/common/utils/registry"
-	"github.com/vmware/harbor/src/jobservice/env"
-	"github.com/vmware/harbor/src/jobservice/logger"
+	common_http "github.com/fske/harbor/src/common/http"
+	"github.com/fske/harbor/src/common/http/modifier/auth"
+	reg "github.com/fske/harbor/src/common/utils/registry"
+	"github.com/fske/harbor/src/jobservice/env"
+	"github.com/fske/harbor/src/jobservice/logger"
 )
 
 // Replicator call UI's API to start a repliation according to the policy ID

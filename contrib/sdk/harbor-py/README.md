@@ -1,6 +1,6 @@
 ## Introduction
 
-[harbor](https://github.com/vmware/harbor) is the enterprise-class registry server for docker distribution.
+[harbor](https://github.com/fske/harbor) is the enterprise-class registry server for docker distribution.
 
 harbor-py is the native and compatible python SDK for harbor and is included in the harbor git repository under `contrib/sdk/harbor-py`.
 
@@ -61,7 +61,7 @@ For more usage, please refer to the [examples](./examples/).
 
 ## Contribution
 
-If you have suggestions, feel free to submit [issues](https://github.com/vmware/harbor/issues) or send [pull-requests](https://github.com/vmware/harbor/pulls) for `harbor-py`.
+If you have suggestions, feel free to submit [issues](https://github.com/fske/harbor/issues) or send [pull-requests](https://github.com/fske/harbor/pulls) for `harbor-py`.
 
 Publish `harbor-py` package to [pypi](https://pypi.python.org/pypi/harbor-py/) server with the following commands.
 

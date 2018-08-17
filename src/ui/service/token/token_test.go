@@ -29,9 +29,9 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/common/utils/test"
-	"github.com/vmware/harbor/src/ui/config"
+	"github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/utils/test"
+	"github.com/fske/harbor/src/ui/config"
 )
 
 func TestMain(m *testing.M) {

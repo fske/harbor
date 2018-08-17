@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	hlog "github.com/vmware/harbor/src/common/utils/log"
+	hlog "github.com/fske/harbor/src/common/utils/log"
 )
 
 const (

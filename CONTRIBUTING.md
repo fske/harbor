@@ -4,7 +4,7 @@
 
 Welcome to Harbor! This guide provides information on filing issues and guidelines for open source contributors. **Please leave comments / suggestions if you find something is missing or incorrect.**
 
-Contributors are encouraged to collaborate using the following resources in addition to the GitHub [issue tacker](https://github.com/vmware/harbor/issues):
+Contributors are encouraged to collaborate using the following resources in addition to the GitHub [issue tacker](https://github.com/fske/harbor/issues):
 * [Slack](https://vmwarecode.slack.com/messages/harbor): If you don't have an @vmware.com or @emc.com email, please sign up at [VMware {code}](https://code.vmware.com/join/) to get a Slack invite.
 * Mail group: Use harbor-dev@googlegroups.com for discussion on Harbor development and contribution. To subscribe, send an email to harbor-dev+subscribe@googlegroups.com .
 
@@ -23,11 +23,11 @@ export GOPATH=$HOME/go
 mkdir -p $GOPATH/src/github.com/vmware
 
 #Get code
-go get github.com/vmware/harbor
-cd $GOPATH/src/github.com/vmware/harbor
+go get github.com/fske/harbor
+cd $GOPATH/src/github.com/fske/harbor
 
 #Track repository under your personal account
-git config push.default nothing # Anything to avoid pushing to vmware/harbor by default
+git config push.default nothing # Anything to avoid pushing to fske/harbor by default
 git remote rename origin vmware
 git remote add $USER git@github.com:$USER/harbor.git
 git fetch $USER
@@ -276,7 +276,7 @@ Commit changes made in response to review comments to the same branch on your fo
 
 It is a great way to contribute to Harbor by reporting an issue. Well-written and complete bug reports are always welcome! Please open an issue on Github and follow the template to fill in required information.
 
-Before opening any issue, please look up the existing [issues](https://github.com/vmware/harbor/issues) to avoid submitting a duplication.
+Before opening any issue, please look up the existing [issues](https://github.com/fske/harbor/issues) to avoid submitting a duplication.
 If you find a match, you can "subscribe" to it to get notified on updates. If you have additional helpful information about the issue, please leave a comment.
 
 When reporting issues, always include:

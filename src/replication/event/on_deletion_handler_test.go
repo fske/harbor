@@ -18,9 +18,9 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/vmware/harbor/src/common/dao"
-	"github.com/vmware/harbor/src/common/utils/test"
-	"github.com/vmware/harbor/src/replication/event/notification"
+	"github.com/fske/harbor/src/common/dao"
+	"github.com/fske/harbor/src/common/utils/test"
+	"github.com/fske/harbor/src/replication/event/notification"
 )
 
 func TestHandleOfOnDeletionHandler(t *testing.T) {

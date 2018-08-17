@@ -20,7 +20,7 @@ Guide to deploy Harbor on Kubernetes. (maintained by community)
 
 ### Developer documents
 
-[Architecture Overview of Harbor](https://github.com/vmware/harbor/wiki/Architecture-Overview-of-Harbor)  
+[Architecture Overview of Harbor](https://github.com/fske/harbor/wiki/Architecture-Overview-of-Harbor)  
 Developers read this first.
 
 [Build Harbor from Source](compile_guide.md)  

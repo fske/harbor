@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/vmware/harbor/src/common/scheduler"
-	"github.com/vmware/harbor/src/common/scheduler/policy"
+	"github.com/fske/harbor/src/common/scheduler"
+	"github.com/fske/harbor/src/common/scheduler/policy"
 )
 
 var testingScheduler = scheduler.DefaultScheduler

@@ -10,13 +10,13 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/vmware/harbor/src/jobservice/logger"
-	"github.com/vmware/harbor/src/jobservice/opm"
-	"github.com/vmware/harbor/src/jobservice/period"
+	"github.com/fske/harbor/src/jobservice/logger"
+	"github.com/fske/harbor/src/jobservice/opm"
+	"github.com/fske/harbor/src/jobservice/period"
 
 	"github.com/gomodule/redigo/redis"
-	"github.com/vmware/harbor/src/jobservice/models"
-	"github.com/vmware/harbor/src/jobservice/utils"
+	"github.com/fske/harbor/src/jobservice/models"
+	"github.com/fske/harbor/src/jobservice/utils"
 )
 
 const (

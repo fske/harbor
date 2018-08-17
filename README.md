@@ -5,7 +5,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/goharbor/harbor)](https://goreportcard.com/report/github.com/goharbor/harbor)
 
 **Note**: The `master` branch may be in an *unstable or even broken state* during development.
-Please use [releases](https://github.com/vmware/harbor/releases) instead of the `master` branch in order to get stable binaries.
+Please use [releases](https://github.com/fske/harbor/releases) instead of the `master` branch in order to get stable binaries.
 
 <img alt="Harbor" src="docs/img/harbor_logo.png">
 
@@ -32,7 +32,7 @@ Harbor is hosted by the [Cloud Native Computing Foundation](https://cncf.io) (CN
 
 **On a Linux host:** docker 17.03.0-ce+ and docker-compose 1.10.0+ .
 
-Download binaries of **[Harbor release ](https://github.com/vmware/harbor/releases)** and follow **[Installation & Configuration Guide](docs/installation_guide.md)** to install Harbor.
+Download binaries of **[Harbor release ](https://github.com/fske/harbor/releases)** and follow **[Installation & Configuration Guide](docs/installation_guide.md)** to install Harbor.
 
 Refer to **[User Guide](docs/user_guide.md)** for more details on how to use Harbor.
 

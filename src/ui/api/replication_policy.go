@@ -20,14 +20,14 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/vmware/harbor/src/common/dao"
-	"github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/common/utils/log"
-	"github.com/vmware/harbor/src/replication"
-	"github.com/vmware/harbor/src/replication/core"
-	rep_models "github.com/vmware/harbor/src/replication/models"
-	api_models "github.com/vmware/harbor/src/ui/api/models"
-	"github.com/vmware/harbor/src/ui/promgr"
+	"github.com/fske/harbor/src/common/dao"
+	"github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/utils/log"
+	"github.com/fske/harbor/src/replication"
+	"github.com/fske/harbor/src/replication/core"
+	rep_models "github.com/fske/harbor/src/replication/models"
+	api_models "github.com/fske/harbor/src/ui/api/models"
+	"github.com/fske/harbor/src/ui/promgr"
 )
 
 // RepPolicyAPI handles /api/replicationPolicies /api/replicationPolicies/:id/enablement

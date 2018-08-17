@@ -15,11 +15,11 @@
 package admiral
 
 import (
-	"github.com/vmware/harbor/src/common"
-	"github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/common/security/admiral/authcontext"
-	"github.com/vmware/harbor/src/common/utils/log"
-	"github.com/vmware/harbor/src/ui/promgr"
+	"github.com/fske/harbor/src/common"
+	"github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/security/admiral/authcontext"
+	"github.com/fske/harbor/src/common/utils/log"
+	"github.com/fske/harbor/src/ui/promgr"
 )
 
 // SecurityContext implements security.Context interface based on

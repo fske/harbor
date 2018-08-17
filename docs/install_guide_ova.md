@@ -2,7 +2,7 @@
 
 **Prerequisites**
 
-- Download the build of the OVA installer from the **[official release](https://github.com/vmware/harbor/releases)** page. 
+- Download the build of the OVA installer from the **[official release](https://github.com/fske/harbor/releases)** page. 
 - Import the appliance to a vCenter Server instance. Deploying the appliance directly on an ESXi host is not supported. 
 - The system requirements are as follows:
    - vCenter Server 6.0 or 6.5.

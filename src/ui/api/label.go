@@ -19,12 +19,12 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/vmware/harbor/src/common"
-	"github.com/vmware/harbor/src/common/dao"
-	"github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/replication"
-	"github.com/vmware/harbor/src/replication/core"
-	rep_models "github.com/vmware/harbor/src/replication/models"
+	"github.com/fske/harbor/src/common"
+	"github.com/fske/harbor/src/common/dao"
+	"github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/replication"
+	"github.com/fske/harbor/src/replication/core"
+	rep_models "github.com/fske/harbor/src/replication/models"
 )
 
 // LabelAPI handles requests for label management

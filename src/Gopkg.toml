@@ -18,7 +18,7 @@
 # [[override]]
 #  name = "github.com/x/y"
 #  version = "2.4.0"
-ignored = ["github.com/vmware/harbor/tests*"]
+ignored = ["github.com/fske/harbor/tests*"]
 
 [prune]
   go-tests = true

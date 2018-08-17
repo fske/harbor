@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/vmware/harbor/src/jobservice/config"
-	"github.com/vmware/harbor/src/jobservice/utils"
+	"github.com/fske/harbor/src/jobservice/config"
+	"github.com/fske/harbor/src/jobservice/utils"
 )
 
 const (

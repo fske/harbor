@@ -20,8 +20,8 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/vmware/harbor/src/common"
-	"github.com/vmware/harbor/src/common/utils/test"
+	"github.com/fske/harbor/src/common"
+	"github.com/fske/harbor/src/common/utils/test"
 )
 
 var c Client

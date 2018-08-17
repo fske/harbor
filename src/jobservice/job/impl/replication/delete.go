@@ -3,10 +3,10 @@ package replication
 import (
 	"net/http"
 
-	common_http "github.com/vmware/harbor/src/common/http"
-	"github.com/vmware/harbor/src/common/utils/registry/auth"
-	"github.com/vmware/harbor/src/jobservice/env"
-	"github.com/vmware/harbor/src/jobservice/logger"
+	common_http "github.com/fske/harbor/src/common/http"
+	"github.com/fske/harbor/src/common/utils/registry/auth"
+	"github.com/fske/harbor/src/jobservice/env"
+	"github.com/fske/harbor/src/jobservice/logger"
 )
 
 // Deleter deletes repository or images on the destination registry

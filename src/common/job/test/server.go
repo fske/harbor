@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/vmware/harbor/src/common/job/models"
+	"github.com/fske/harbor/src/common/job/models"
 )
 
 const (

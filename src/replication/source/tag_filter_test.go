@@ -18,9 +18,9 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/vmware/harbor/src/replication"
-	"github.com/vmware/harbor/src/replication/models"
-	"github.com/vmware/harbor/src/replication/registry"
+	"github.com/fske/harbor/src/replication"
+	"github.com/fske/harbor/src/replication/models"
+	"github.com/fske/harbor/src/replication/registry"
 )
 
 func TestInitOfTagFilter(t *testing.T) {

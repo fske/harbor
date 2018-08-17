@@ -4,16 +4,16 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/vmware/harbor/src/common/dao"
-	common_http "github.com/vmware/harbor/src/common/http"
-	"github.com/vmware/harbor/src/common/job"
-	job_models "github.com/vmware/harbor/src/common/job/models"
-	"github.com/vmware/harbor/src/common/models"
-	common_utils "github.com/vmware/harbor/src/common/utils"
-	"github.com/vmware/harbor/src/common/utils/log"
-	"github.com/vmware/harbor/src/replication"
-	"github.com/vmware/harbor/src/ui/config"
-	"github.com/vmware/harbor/src/ui/utils"
+	"github.com/fske/harbor/src/common/dao"
+	common_http "github.com/fske/harbor/src/common/http"
+	"github.com/fske/harbor/src/common/job"
+	job_models "github.com/fske/harbor/src/common/job/models"
+	"github.com/fske/harbor/src/common/models"
+	common_utils "github.com/fske/harbor/src/common/utils"
+	"github.com/fske/harbor/src/common/utils/log"
+	"github.com/fske/harbor/src/replication"
+	"github.com/fske/harbor/src/ui/config"
+	"github.com/fske/harbor/src/ui/utils"
 )
 
 //ScheduleTrigger will schedule a alternate policy to provide 'daily' and 'weekly' trigger ways.

@@ -4,7 +4,7 @@ set -e
 # Generate new version number by git tag and drone id
 base_version="0.5"
 version_config="\"version\": \"$base_version.$DRONE_BUILD_NUMBER\""
-harbor_root="/drone/src/github.com/vmware/harbor"
+harbor_root="/drone/src/github.com/fske/harbor"
 ui_lib_path="/src/ui_ng/lib"
 npm_token_script_path="/tools/ui_lib/get_npm_token.py"
 

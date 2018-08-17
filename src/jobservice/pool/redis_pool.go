@@ -11,13 +11,13 @@ import (
 	"github.com/gocraft/work"
 	"github.com/gomodule/redigo/redis"
 	"github.com/robfig/cron"
-	"github.com/vmware/harbor/src/jobservice/env"
-	"github.com/vmware/harbor/src/jobservice/job"
-	"github.com/vmware/harbor/src/jobservice/logger"
-	"github.com/vmware/harbor/src/jobservice/models"
-	"github.com/vmware/harbor/src/jobservice/opm"
-	"github.com/vmware/harbor/src/jobservice/period"
-	"github.com/vmware/harbor/src/jobservice/utils"
+	"github.com/fske/harbor/src/jobservice/env"
+	"github.com/fske/harbor/src/jobservice/job"
+	"github.com/fske/harbor/src/jobservice/logger"
+	"github.com/fske/harbor/src/jobservice/models"
+	"github.com/fske/harbor/src/jobservice/opm"
+	"github.com/fske/harbor/src/jobservice/period"
+	"github.com/fske/harbor/src/jobservice/utils"
 )
 
 var (

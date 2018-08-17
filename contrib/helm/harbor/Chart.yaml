@@ -7,10 +7,10 @@ keywords:
 - docker
 - registry
 - harbor
-home: https://github.com/vmware/harbor
-icon: https://raw.githubusercontent.com/vmware/harbor/master/docs/img/harbor_logo.png
+home: https://github.com/fske/harbor
+icon: https://raw.githubusercontent.com/fske/harbor/master/docs/img/harbor_logo.png
 sources:
-- https://github.com/vmware/harbor/tree/master/contrib/helm/harbor
+- https://github.com/fske/harbor/tree/master/contrib/helm/harbor
 maintainers:
 - name: Jesse Hu
   email: huh@vmware.com
