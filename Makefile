@@ -109,7 +109,7 @@ REDISVERSION=$(VERSIONTAG)
 CHARTMUSEUMVERSION=v0.7.1
 
 #clarity parameters
-CLARITYIMAGE=goharbor/harbor-clarity-ui-builder[:tag]
+CLARITYIMAGE=goharbor/harbor-clarity-ui-builder:1.6.0
 CLARITYSEEDPATH=/harbor_src
 CLARITYUTPATH=${CLARITYSEEDPATH}/ui_ng/lib
 CLARITYBUILDSCRIPT=/entrypoint.sh
