@@ -19,7 +19,7 @@ import (
 	"time"
 
 	"github.com/astaxie/beego/orm"
-	"github.com/vmware/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/models"
 )
 
 // AddRepository adds a repo to the database.

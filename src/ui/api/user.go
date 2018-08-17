@@ -21,12 +21,12 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/vmware/harbor/src/common"
-	"github.com/vmware/harbor/src/common/dao"
-	"github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/common/utils"
-	"github.com/vmware/harbor/src/common/utils/log"
-	"github.com/vmware/harbor/src/ui/config"
+	"github.com/fske/harbor/src/common"
+	"github.com/fske/harbor/src/common/dao"
+	"github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/utils"
+	"github.com/fske/harbor/src/common/utils/log"
+	"github.com/fske/harbor/src/ui/config"
 )
 
 // UserAPI handles request to /api/users/{}
@@ -353,7 +353,7 @@ func (ua *UserAPI) modifiable() bool {
 // validate only validate when user register
 func validate(user models.User) error {
 
-	if isIllegalLength(user.Username, 1, 20) {
+	if isIllegalLength(user.Username, 1, 30) {
 		return fmt.Errorf("username with illegal length")
 	}
 	if isContainIllegalChar(user.Username, []string{",", "~", "#", "$", "%"}) {

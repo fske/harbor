@@ -109,7 +109,7 @@ REDISVERSION=$(VERSIONTAG)
 CHARTMUSEUMVERSION=v0.7.1
 
 #clarity parameters
-CLARITYIMAGE=goharbor/harbor-clarity-ui-builder[:tag]
+CLARITYIMAGE=goharbor/harbor-clarity-ui-builder:1.6.0
 CLARITYSEEDPATH=/harbor_src
 CLARITYUTPATH=${CLARITYSEEDPATH}/ui_ng/lib
 CLARITYBUILDSCRIPT=/entrypoint.sh
@@ -163,7 +163,7 @@ CONFIGFILE=harbor.cfg
 
 # prepare parameters
 PREPAREPATH=$(TOOLSPATH)
-PREPARECMD=prepare
+PREPARECMD=prepare.py
 PREPARECMD_PARA=--conf $(CONFIGPATH)/$(CONFIGFILE)
 ifeq ($(NOTARYFLAG), true)
 	PREPARECMD_PARA+= --with-notary
@@ -301,6 +301,13 @@ compile_golangimage: compile_clarity
 
 	@echo "compiling binary for harbor registry controller (golang image)..."
 	@$(DOCKERCMD) run --rm -v $(BUILDPATH):$(GOBUILDPATH) -w $(GOBUILDPATH_REGISTRYCTL) $(GOBUILDIMAGE) $(GOIMAGEBUILD) -o $(GOBUILDMAKEPATH_REGISTRYCTL)/$(REGISTRYCTLBINARYNAME)
+	@echo "Done."
+
+compile_golangimage_ui: compile_clarity
+	@echo "compiling binary for ui (golang image)..."
+	@echo $(GOBASEPATH)
+	@echo $(GOBUILDPATH)
+	@$(DOCKERCMD) run --rm -v $(BUILDPATH):$(GOBUILDPATH) -w $(GOBUILDPATH_UI) $(GOBUILDIMAGE) $(GOIMAGEBUILD) -o $(GOBUILDMAKEPATH_UI)/$(UIBINARYNAME)
 	@echo "Done."
 
 compile:check_environment compile_golangimage
