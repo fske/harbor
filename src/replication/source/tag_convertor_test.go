@@ -18,8 +18,8 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/vmware/harbor/src/replication"
-	"github.com/vmware/harbor/src/replication/models"
+	"github.com/fske/harbor/src/replication"
+	"github.com/fske/harbor/src/replication/models"
 )
 
 func TestTagConvert(t *testing.T) {

@@ -1,6 +1,6 @@
 workspace:
   base: /drone
-  path: src/github.com/vmware/harbor
+  path: src/github.com/fske/harbor
 
 clone:
   git:
@@ -27,7 +27,7 @@ pipeline:
       status: success
 
   test-and-issue-build:
-    image: vmware/harbor-e2e-engine:1.41
+    image: fske/harbor-e2e-engine:1.41
     pull: true
     privileged: true
     environment:
@@ -65,9 +65,9 @@ pipeline:
         target: slack_webhook
     username: drone
     template: >
-      build https://ci-vic.vmware.com/vmware/harbor/{{ build.number }} finished with a {{ build.status }} status. Please find logs at https://storage.googleapis.com/harbor-ci-logs/integration_logs_{{ build.number }}_{{ build.commit }}.tar.gz
+      build https://ci-vic.vmware.com/fske/harbor/{{ build.number }} finished with a {{ build.status }} status. Please find logs at https://storage.googleapis.com/harbor-ci-logs/integration_logs_{{ build.number }}_{{ build.commit }}.tar.gz
     when:
-      repo: vmware/harbor
+      repo: fske/harbor
       event: [push, tag, deployment]
       branch: [ master, release-*, refs/tags/* ]
       status: [ failure, success ]
@@ -81,7 +81,7 @@ pipeline:
     repositories:
        - vmware/vic-product
     when:
-      repo: vmware/harbor
+      repo: fske/harbor
       event: [ push, tag ]
       branch: [ master, release-*, refs/tags/* ]
       status: success

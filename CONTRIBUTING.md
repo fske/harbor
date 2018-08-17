@@ -6,7 +6,7 @@ This guide provides information on filing issues and guidelines for open source 
 
 It is a great way to contribute to Harbor by reporting an issue. Well-written and complete bug reports are always welcome! Please open an issue on Github and follow the template to fill in required information.
 
-Before opening any issue, please look up the existing [issues](https://github.com/vmware/harbor/issues) to avoid submitting a duplication.
+Before opening any issue, please look up the existing [issues](https://github.com/fske/harbor/issues) to avoid submitting a duplication.
 If you find a match, you can "subscribe" it to get notified on updates. If you have additional helpful information about the issue, please leave a comment.
 
 When reporting issues, always include:
@@ -31,7 +31,7 @@ Please submit a PR to contain changes bit by bit. A PR consisting of a lot featu
 
 If you are not a member of `vmware` org in github, then your PR Drone CI build may fail. In that case, request one of the existing members / reviewers to fork your failed build to skip membership checking.
 ```shell
-drone build start --param SKIP_CHECK_MEMBERSHIP=true vmware/harbor <Build Number>
+drone build start --param SKIP_CHECK_MEMBERSHIP=true fske/harbor <Build Number>
 ```
 
 ### Design new features

@@ -17,10 +17,10 @@ package api
 import (
 	"fmt"
 
-	"github.com/vmware/harbor/src/common/models"
-	ldapUtils "github.com/vmware/harbor/src/common/utils/ldap"
-	"github.com/vmware/harbor/src/common/utils/log"
-	"github.com/vmware/harbor/src/ui/auth"
+	"github.com/fske/harbor/src/common/models"
+	ldapUtils "github.com/fske/harbor/src/common/utils/ldap"
+	"github.com/fske/harbor/src/common/utils/log"
+	"github.com/fske/harbor/src/ui/auth"
 )
 
 // LdapAPI handles requesst to /api/ldap/ping /api/ldap/user/search /api/ldap/user/import

@@ -7,7 +7,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/vmware/harbor/src/jobservice/models"
+	"github.com/fske/harbor/src/jobservice/models"
 )
 
 func TestHookClient(t *testing.T) {

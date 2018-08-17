@@ -19,7 +19,7 @@ import (
 
 	"github.com/astaxie/beego/orm"
 	_ "github.com/lib/pq" //register pgsql driver
-	"github.com/vmware/harbor/src/common/utils"
+	"github.com/fske/harbor/src/common/utils"
 )
 
 type pgsql struct {

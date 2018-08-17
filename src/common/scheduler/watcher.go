@@ -1,9 +1,9 @@
 package scheduler
 
 import (
-	"github.com/vmware/harbor/src/common/scheduler/policy"
-	"github.com/vmware/harbor/src/common/scheduler/task"
-	"github.com/vmware/harbor/src/common/utils/log"
+	"github.com/fske/harbor/src/common/scheduler/policy"
+	"github.com/fske/harbor/src/common/scheduler/task"
+	"github.com/fske/harbor/src/common/utils/log"
 
 	"fmt"
 	"sync"

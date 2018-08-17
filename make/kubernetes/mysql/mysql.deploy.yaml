@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: mysql-app
-        image: vmware/harbor-db:v1.2.0
+        image: fske/harbor-db:v1.2.0
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3306

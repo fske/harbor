@@ -19,10 +19,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/vmware/harbor/src/common/dao"
-	"github.com/vmware/harbor/src/common/utils/test"
-	"github.com/vmware/harbor/src/replication"
-	"github.com/vmware/harbor/src/replication/models"
+	"github.com/fske/harbor/src/common/dao"
+	"github.com/fske/harbor/src/common/utils/test"
+	"github.com/fske/harbor/src/replication"
+	"github.com/fske/harbor/src/replication/models"
 )
 
 func TestCreateTrigger(t *testing.T) {

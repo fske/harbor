@@ -1,7 +1,7 @@
 package notifier
 
 import (
-	"github.com/vmware/harbor/src/common"
+	"github.com/fske/harbor/src/common"
 )
 
 //Define global topic names

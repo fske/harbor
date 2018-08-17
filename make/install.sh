@@ -221,5 +221,5 @@ echo ""
 success $"----Harbor has been installed and started successfully.----
 
 Now you should be able to visit the admin portal at ${protocol}://${hostname}. 
-For more details, please visit https://github.com/vmware/harbor .
+For more details, please visit https://github.com/fske/harbor .
 "

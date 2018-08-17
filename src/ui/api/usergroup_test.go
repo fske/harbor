@@ -19,11 +19,11 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/vmware/harbor/src/common"
+	"github.com/fske/harbor/src/common"
 
-	"github.com/vmware/harbor/src/common/dao/group"
+	"github.com/fske/harbor/src/common/dao/group"
 
-	"github.com/vmware/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/models"
 )
 
 const (

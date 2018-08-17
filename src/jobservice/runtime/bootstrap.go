@@ -11,16 +11,16 @@ import (
 	"time"
 
 	"github.com/garyburd/redigo/redis"
-	"github.com/vmware/harbor/src/common/job"
-	"github.com/vmware/harbor/src/jobservice/api"
-	"github.com/vmware/harbor/src/jobservice/config"
-	"github.com/vmware/harbor/src/jobservice/core"
-	"github.com/vmware/harbor/src/jobservice/env"
-	"github.com/vmware/harbor/src/jobservice/job/impl"
-	"github.com/vmware/harbor/src/jobservice/job/impl/replication"
-	"github.com/vmware/harbor/src/jobservice/job/impl/scan"
-	"github.com/vmware/harbor/src/jobservice/logger"
-	"github.com/vmware/harbor/src/jobservice/pool"
+	"github.com/fske/harbor/src/common/job"
+	"github.com/fske/harbor/src/jobservice/api"
+	"github.com/fske/harbor/src/jobservice/config"
+	"github.com/fske/harbor/src/jobservice/core"
+	"github.com/fske/harbor/src/jobservice/env"
+	"github.com/fske/harbor/src/jobservice/job/impl"
+	"github.com/fske/harbor/src/jobservice/job/impl/replication"
+	"github.com/fske/harbor/src/jobservice/job/impl/scan"
+	"github.com/fske/harbor/src/jobservice/logger"
+	"github.com/fske/harbor/src/jobservice/pool"
 )
 
 const (

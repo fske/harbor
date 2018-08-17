@@ -29,12 +29,12 @@ When upgrading your existing Habor instance to a newer version, you may need to 
     ```
 
 3. Get the lastest Harbor release package from Github:
-   https://github.com/vmware/harbor/releases
+   https://github.com/fske/harbor/releases
 
 4. Before upgrading Harbor, perform migration first.  The migration tool is delivered as a docker image, so you should pull the image from docker hub. Replace [tag] with the release version of Harbor (e.g. v1.5.0) in the below command:
 
     ```
-    docker pull vmware/harbor-migrator:[tag]
+    docker pull fske/harbor-migrator:[tag]
     ```
 
 5. Back up database/harbor.cfg to a directory such as `/path/to/backup`. You need to create the directory if it does not exist.  Also, note that the username and password to access the db are provided via environment variable "DB_USR" and "DB_PWD". 
@@ -42,34 +42,34 @@ When upgrading your existing Habor instance to a newer version, you may need to 
     **NOTE:** Upgrade from harbor 1.2 or older to harbor 1.3 must use `vmware/migratorharbor-db-migrator:1.2`. Because DB engine replaced by MariaDB in harbor 1.3
 
     ```
-    docker run -it --rm -e DB_USR=root -e DB_PWD={db_pwd} -v ${harbor_db_path}:/var/lib/mysql -v ${harbor_cfg}:/harbor-migration/harbor-cfg/harbor.cfg -v ${backup_path}:/harbor-migration/backup vmware/harbor-migrator:[tag] backup
+    docker run -it --rm -e DB_USR=root -e DB_PWD={db_pwd} -v ${harbor_db_path}:/var/lib/mysql -v ${harbor_cfg}:/harbor-migration/harbor-cfg/harbor.cfg -v ${backup_path}:/harbor-migration/backup fske/harbor-migrator:[tag] backup
     ```
 
     **NOTE:** By default, the migrator handles the backup for DB or CFG. If you want to backup DB or CFG only, refer to the following commands:
     
     ```
-    docker run -it --rm -e DB_USR=root -e DB_PWD={db_pwd} -v ${harbor_db_path}:/var/lib/mysql -v ${backup_path}:/harbor-migration/backup vmware/harbor-migrator:[tag] --db backup
+    docker run -it --rm -e DB_USR=root -e DB_PWD={db_pwd} -v ${harbor_db_path}:/var/lib/mysql -v ${backup_path}:/harbor-migration/backup fske/harbor-migrator:[tag] --db backup
     ```
 
     ```
-    docker run -it --rm -v ${harbor_cfg}:/harbor-migration/harbor-cfg/harbor.cfg -v ${backup_path}:/harbor-migration/backup vmware/harbor-migrator:[tag] --cfg backup
+    docker run -it --rm -v ${harbor_cfg}:/harbor-migration/harbor-cfg/harbor.cfg -v ${backup_path}:/harbor-migration/backup fske/harbor-migrator:[tag] --cfg backup
     ```    
 
 6.  Upgrade database schema, harbor.cfg and migrate data.
 
     ```
-    docker run -it --rm -e DB_USR=root -e DB_PWD={db_pwd} -v ${harbor_db_path}:/var/lib/mysql -v ${harbor_cfg}:/harbor-migration/harbor-cfg/harbor.cfg vmware/harbor-migrator:[tag] up
+    docker run -it --rm -e DB_USR=root -e DB_PWD={db_pwd} -v ${harbor_db_path}:/var/lib/mysql -v ${harbor_cfg}:/harbor-migration/harbor-cfg/harbor.cfg fske/harbor-migrator:[tag] up
     ```
 
     **NOTE:** By default, the migrator handles the upgrade for DB and CFG. If you want to upgrade DB or CFG only, 
     refer to the following commands:
     
     ```
-    docker run -it --rm -e DB_USR=root -e DB_PWD={db_pwd} -v ${harbor_db_path}:/var/lib/mysql vmware/harbor-migrator:[tag] --db up
+    docker run -it --rm -e DB_USR=root -e DB_PWD={db_pwd} -v ${harbor_db_path}:/var/lib/mysql fske/harbor-migrator:[tag] --db up
     ```
 
     ```
-    docker run -it --rm -v ${harbor_cfg}:/harbor-migration/harbor-cfg/harbor.cfg vmware/harbor-migrator:[tag] --cfg up
+    docker run -it --rm -v ${harbor_cfg}:/harbor-migration/harbor-cfg/harbor.cfg fske/harbor-migrator:[tag] --cfg up
     ```
 
      **NOTE:** Some errors like
@@ -96,21 +96,21 @@ For any reason, if you want to roll back to the previous version of Harbor, foll
 2. Restore database from backup file in `/path/to/backup` . 
 
     ```
-    docker run -it --rm -e DB_USR=root -e DB_PWD={db_pwd} -v ${harbor_db_path}:/var/lib/mysql -v ${harbor_cfg}:/harbor-migration/harbor-cfg/harbor.cfg -v ${backup_path}:/harbor-migration/backup vmware/harbor-migrator:[tag] restore
+    docker run -it --rm -e DB_USR=root -e DB_PWD={db_pwd} -v ${harbor_db_path}:/var/lib/mysql -v ${harbor_cfg}:/harbor-migration/harbor-cfg/harbor.cfg -v ${backup_path}:/harbor-migration/backup fske/harbor-migrator:[tag] restore
     ```
  
     **NOTE:** By default, the migrator handles the restore for DB and CFG. If you want to restore DB or CFG only, 
     refer to the following commands:
     
     ```
-    docker run -it --rm -e DB_USR=root -e DB_PWD={db_pwd} -v ${harbor_db_path}:/var/lib/mysql -v ${backup_path}:/harbor-migration/backup vmware/harbor-migrator:[tag] --db restore
+    docker run -it --rm -e DB_USR=root -e DB_PWD={db_pwd} -v ${harbor_db_path}:/var/lib/mysql -v ${backup_path}:/harbor-migration/backup fske/harbor-migrator:[tag] --db restore
     ```
 
     ```
-    docker run -it --rm -v ${harbor_cfg}:/harbor-migration/harbor-cfg/harbor.cfg -v ${backup_path}:/harbor-migration/backup vmware/harbor-migrator:[tag] --cfg restore
+    docker run -it --rm -v ${harbor_cfg}:/harbor-migration/harbor-cfg/harbor.cfg -v ${backup_path}:/harbor-migration/backup fske/harbor-migrator:[tag] --cfg restore
     ```
  
-    **NOTE:** Rollback from harbor 1.3 to harbor 1.2 should delete `/data/database` directory first, then create new database directory `docker-compose up -d && docker-compose stop`. And must use `vmware/harbor-db-migrator:1.2` to restore. Because of DB engine change.
+    **NOTE:** Rollback from harbor 1.3 to harbor 1.2 should delete `/data/database` directory first, then create new database directory `docker-compose up -d && docker-compose stop`. And must use `fske/harbor-db-migrator:1.2` to restore. Because of DB engine change.
 
 3. Remove current Harbor instance.
     ```
@@ -139,4 +139,4 @@ For any reason, if you want to roll back to the previous version of Harbor, foll
 ### Migration tool reference
 - Use `test` command to test mysql connection:
 
-    ```docker run -it --rm -e DB_USR=root -e DB_PWD={db_pwd} -v ${harbor_db_path}:/var/lib/mysql -v ${harbor_cfg}:/harbor-migration/harbor-cfg/harbor.cfg vmware/harbor-migrator:[tag] test```
+    ```docker run -it --rm -e DB_USR=root -e DB_PWD={db_pwd} -v ${harbor_db_path}:/var/lib/mysql -v ${harbor_cfg}:/harbor-migration/harbor-cfg/harbor.cfg fske/harbor-migrator:[tag] test```

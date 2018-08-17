@@ -25,16 +25,16 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/vmware/harbor/src/adminserver/client"
-	"github.com/vmware/harbor/src/common"
-	comcfg "github.com/vmware/harbor/src/common/config"
-	"github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/common/secret"
-	"github.com/vmware/harbor/src/common/utils/log"
-	"github.com/vmware/harbor/src/ui/promgr"
-	"github.com/vmware/harbor/src/ui/promgr/pmsdriver"
-	"github.com/vmware/harbor/src/ui/promgr/pmsdriver/admiral"
-	"github.com/vmware/harbor/src/ui/promgr/pmsdriver/local"
+	"github.com/fske/harbor/src/adminserver/client"
+	"github.com/fske/harbor/src/common"
+	comcfg "github.com/fske/harbor/src/common/config"
+	"github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/secret"
+	"github.com/fske/harbor/src/common/utils/log"
+	"github.com/fske/harbor/src/ui/promgr"
+	"github.com/fske/harbor/src/ui/promgr/pmsdriver"
+	"github.com/fske/harbor/src/ui/promgr/pmsdriver/admiral"
+	"github.com/fske/harbor/src/ui/promgr/pmsdriver/local"
 )
 
 const (

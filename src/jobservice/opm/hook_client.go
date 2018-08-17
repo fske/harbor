@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/vmware/harbor/src/jobservice/models"
-	"github.com/vmware/harbor/src/jobservice/utils"
+	"github.com/fske/harbor/src/jobservice/models"
+	"github.com/fske/harbor/src/jobservice/utils"
 )
 
 const (

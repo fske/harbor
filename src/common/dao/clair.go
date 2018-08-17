@@ -15,8 +15,8 @@
 package dao
 
 import (
-	"github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/common/utils/log"
+	"github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/utils/log"
 
 	"time"
 )

@@ -21,14 +21,14 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/vmware/harbor/src/common"
-	"github.com/vmware/harbor/src/common/dao"
-	clairdao "github.com/vmware/harbor/src/common/dao/clair"
-	"github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/common/utils"
-	"github.com/vmware/harbor/src/common/utils/clair"
-	"github.com/vmware/harbor/src/common/utils/log"
-	"github.com/vmware/harbor/src/ui/config"
+	"github.com/fske/harbor/src/common"
+	"github.com/fske/harbor/src/common/dao"
+	clairdao "github.com/fske/harbor/src/common/dao/clair"
+	"github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/utils"
+	"github.com/fske/harbor/src/common/utils/clair"
+	"github.com/fske/harbor/src/common/utils/log"
+	"github.com/fske/harbor/src/ui/config"
 )
 
 //SystemInfoAPI handle requests for getting system info /api/systeminfo

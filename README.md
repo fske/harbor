@@ -1,10 +1,10 @@
 # Harbor
 
-[![Build Status](https://travis-ci.org/vmware/harbor.svg?branch=master)](https://travis-ci.org/vmware/harbor)
-[![Coverage Status](https://coveralls.io/repos/github/vmware/harbor/badge.svg?branch=master)](https://coveralls.io/github/vmware/harbor?branch=master)
+[![Build Status](https://travis-ci.org/fske/harbor.svg?branch=master)](https://travis-ci.org/fske/harbor)
+[![Coverage Status](https://coveralls.io/repos/github/fske/harbor/badge.svg?branch=master)](https://coveralls.io/github/fske/harbor?branch=master)
 
 **Note**: The `master` branch may be in an *unstable or even broken state* during development.
-Please use [releases](https://github.com/vmware/harbor/releases) instead of the `master` branch in order to get stable binaries.
+Please use [releases](https://github.com/fske/harbor/releases) instead of the `master` branch in order to get stable binaries.
 
 <img alt="Harbor" src="docs/img/harbor_logo.png">
 
@@ -28,7 +28,7 @@ Project Harbor is an enterprise-class registry server that stores and distribute
 
 **On a Linux host:** docker 1.10.0+ and docker-compose 1.6.0+ .
 
-Download binaries of **[Harbor release ](https://github.com/vmware/harbor/releases)** and follow **[Installation & Configuration Guide](docs/installation_guide.md)** to install Harbor.
+Download binaries of **[Harbor release ](https://github.com/fske/harbor/releases)** and follow **[Installation & Configuration Guide](docs/installation_guide.md)** to install Harbor.
 
 Refer to **[User Guide](docs/user_guide.md)** for more details on how to use Harbor.
 

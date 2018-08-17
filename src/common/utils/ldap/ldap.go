@@ -22,9 +22,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/common/utils/log"
-	"github.com/vmware/harbor/src/ui/config"
+	"github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/utils/log"
+	"github.com/fske/harbor/src/ui/config"
 
 	goldap "gopkg.in/ldap.v2"
 )

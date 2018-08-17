@@ -20,17 +20,17 @@ import (
 	"strings"
 	"time"
 
-	"github.com/vmware/harbor/src/common/dao"
-	clairdao "github.com/vmware/harbor/src/common/dao/clair"
-	"github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/common/notifier"
-	"github.com/vmware/harbor/src/common/utils"
-	"github.com/vmware/harbor/src/common/utils/log"
-	rep_notification "github.com/vmware/harbor/src/replication/event/notification"
-	"github.com/vmware/harbor/src/replication/event/topic"
-	"github.com/vmware/harbor/src/ui/api"
-	"github.com/vmware/harbor/src/ui/config"
-	uiutils "github.com/vmware/harbor/src/ui/utils"
+	"github.com/fske/harbor/src/common/dao"
+	clairdao "github.com/fske/harbor/src/common/dao/clair"
+	"github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/notifier"
+	"github.com/fske/harbor/src/common/utils"
+	"github.com/fske/harbor/src/common/utils/log"
+	rep_notification "github.com/fske/harbor/src/replication/event/notification"
+	"github.com/fske/harbor/src/replication/event/topic"
+	"github.com/fske/harbor/src/ui/api"
+	"github.com/fske/harbor/src/ui/config"
+	uiutils "github.com/fske/harbor/src/ui/utils"
 )
 
 // NotificationHandler handles request on /service/notifications/, which listens to registry's events.

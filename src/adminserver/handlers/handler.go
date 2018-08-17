@@ -19,8 +19,8 @@ import (
 	"os"
 
 	gorilla_handlers "github.com/gorilla/handlers"
-	"github.com/vmware/harbor/src/adminserver/auth"
-	"github.com/vmware/harbor/src/common/utils/log"
+	"github.com/fske/harbor/src/adminserver/auth"
+	"github.com/fske/harbor/src/common/utils/log"
 )
 
 // NewHandler returns a gorilla router which is wrapped by  authenticate handler

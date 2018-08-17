@@ -9,9 +9,9 @@ import (
 	"github.com/garyburd/redigo/redis"
 	"github.com/gocraft/work"
 	"github.com/robfig/cron"
-	"github.com/vmware/harbor/src/jobservice/job"
-	"github.com/vmware/harbor/src/jobservice/logger"
-	"github.com/vmware/harbor/src/jobservice/utils"
+	"github.com/fske/harbor/src/jobservice/job"
+	"github.com/fske/harbor/src/jobservice/logger"
+	"github.com/fske/harbor/src/jobservice/utils"
 )
 
 const (

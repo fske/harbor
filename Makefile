@@ -106,7 +106,7 @@ MIGRATORVERSION=v1.5.0
 REDISVERSION=$(VERSIONTAG)
 
 #clarity parameters
-CLARITYIMAGE=vmware/harbor-clarity-ui-builder[:tag]
+CLARITYIMAGE=fske/harbor-clarity-ui-builder:1.4.1
 CLARITYSEEDPATH=/harbor_src
 CLARITYUTPATH=${CLARITYSEEDPATH}/ui_ng/lib
 CLARITYBUILDSCRIPT=/entrypoint.sh
@@ -173,12 +173,12 @@ DOCKERFILEPATH_COMMON=$(MAKEPATH)/common
 DOCKERFILE_CLARITY=$(MAKEPATH)/dev/nodeclarity/Dockerfile
 
 # docker image name
-DOCKERIMAGENAME_ADMINSERVER=vmware/harbor-adminserver
-DOCKERIMAGENAME_UI=vmware/harbor-ui
-DOCKERIMAGENAME_JOBSERVICE=vmware/harbor-jobservice
-DOCKERIMAGENAME_LOG=vmware/harbor-log
-DOCKERIMAGENAME_DB=vmware/harbor-db
-DOCKERIMAGENAME_CLARITY=vmware/harbor-clarity-ui-builder
+DOCKERIMAGENAME_ADMINSERVER=fske/harbor-adminserver
+DOCKERIMAGENAME_UI=fske/harbor-ui
+DOCKERIMAGENAME_JOBSERVICE=fske/harbor-jobservice
+DOCKERIMAGENAME_LOG=fske/harbor-log
+DOCKERIMAGENAME_DB=fske/harbor-db
+DOCKERIMAGENAME_CLARITY=fske/harbor-clarity-ui-builder
 
 # docker-compose files
 DOCKERCOMPOSEFILEPATH=$(MAKEPATH)
@@ -239,7 +239,7 @@ ifeq ($(CLAIRFLAG), true)
 	DOCKERCOMPOSE_LIST+= -f $(DOCKERCOMPOSEFILEPATH)/$(DOCKERCOMPOSECLAIRFILENAME)
 endif
 ifeq ($(MIGRATORFLAG), true)
-	DOCKERSAVE_PARA+= vmware/harbor-migrator:$(MIGRATORVERSION)
+	DOCKERSAVE_PARA+= fske/harbor-migrator:$(MIGRATORVERSION)
 endif
 
 version:
@@ -274,6 +274,13 @@ compile_golangimage: compile_clarity
 	@$(DOCKERCMD) run --rm -v $(BUILDPATH):$(GOBUILDPATH) -w $(GOBUILDPATH_JOBSERVICE) $(GOBUILDIMAGE) $(GOIMAGEBUILD) -o $(GOBUILDMAKEPATH_JOBSERVICE)/$(JOBSERVICEBINARYNAME)
 	@echo "Done."
 
+compile_golangimage_ui: compile_clarity
+	@echo "compiling binary for ui (golang image)..."
+	@echo $(GOBASEPATH)
+	@echo $(GOBUILDPATH)
+	@$(DOCKERCMD) run --rm -v $(BUILDPATH):$(GOBUILDPATH) -w $(GOBUILDPATH_UI) $(GOBUILDIMAGE) $(GOIMAGEBUILD) -o $(GOBUILDMAKEPATH_UI)/$(UIBINARYNAME)
+	@echo "Done."
+
 compile:check_environment compile_golangimage
 	
 prepare:
@@ -282,6 +289,12 @@ prepare:
 
 build:
 	make -f $(MAKEFILEPATH_PHOTON)/Makefile build -e DEVFLAG=$(DEVFLAG) -e MARIADBVERSION=$(MARIADBVERSION) \
+	 -e REGISTRYVERSION=$(REGISTRYVERSION) -e NGINXVERSION=$(NGINXVERSION) -e NOTARYVERSION=$(NOTARYVERSION) \
+	 -e CLAIRVERSION=$(CLAIRVERSION) -e CLAIRDBVERSION=$(CLAIRDBVERSION) -e VERSIONTAG=$(VERSIONTAG) \
+	 -e BUILDBIN=$(BUILDBIN) -e REDISVERSION=$(REDISVERSION)
+
+build_ui:
+	make -f $(MAKEFILEPATH_PHOTON)/Makefile build_ui -e DEVFLAG=$(DEVFLAG) -e MARIADBVERSION=$(MARIADBVERSION) \
 	 -e REGISTRYVERSION=$(REGISTRYVERSION) -e NGINXVERSION=$(NGINXVERSION) -e NOTARYVERSION=$(NOTARYVERSION) \
 	 -e CLAIRVERSION=$(CLAIRVERSION) -e CLAIRDBVERSION=$(CLAIRDBVERSION) -e VERSIONTAG=$(VERSIONTAG) \
 	 -e BUILDBIN=$(BUILDBIN) -e REDISVERSION=$(REDISVERSION)
@@ -347,7 +360,7 @@ package_offline: compile version build modify_sourcefiles modify_composefile
 	
 	@if [ "$(MIGRATORFLAG)" = "true" ] ; then \
 		echo "pulling Harbor migrator..."; \
-		$(DOCKERPULL) vmware/harbor-migrator:$(MIGRATORVERSION); \
+		$(DOCKERPULL) fske/harbor-migrator:$(MIGRATORVERSION); \
 	fi
 
 	@echo "saving harbor docker image"

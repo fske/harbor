@@ -3,14 +3,14 @@ package proxy
 import (
 	"encoding/json"
 
-	"github.com/vmware/harbor/src/common/dao"
-	"github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/common/utils/clair"
-	"github.com/vmware/harbor/src/common/utils/log"
-	"github.com/vmware/harbor/src/common/utils/notary"
-	"github.com/vmware/harbor/src/ui/config"
-	"github.com/vmware/harbor/src/ui/promgr"
-	uiutils "github.com/vmware/harbor/src/ui/utils"
+	"github.com/fske/harbor/src/common/dao"
+	"github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/utils/clair"
+	"github.com/fske/harbor/src/common/utils/log"
+	"github.com/fske/harbor/src/common/utils/notary"
+	"github.com/fske/harbor/src/ui/config"
+	"github.com/fske/harbor/src/ui/promgr"
+	uiutils "github.com/fske/harbor/src/ui/utils"
 
 	"context"
 	"fmt"
@@ -27,7 +27,7 @@ const (
 	manifestURLPattern = `^/v2/((?:[a-z0-9]+(?:[._-][a-z0-9]+)*/)+)manifests/([\w][\w.:-]{0,127})`
 	catalogURLPattern  = `/v2/_catalog`
 	imageInfoCtxKey    = contextKey("ImageInfo")
-	//TODO: temp solution, remove after vmware/harbor#2242 is resolved.
+	//TODO: temp solution, remove after fske/harbor#2242 is resolved.
 	tokenUsername = "harbor-ui"
 )
 

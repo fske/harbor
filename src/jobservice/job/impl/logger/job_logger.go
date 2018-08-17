@@ -4,8 +4,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/vmware/harbor/src/common/utils/log"
-	"github.com/vmware/harbor/src/jobservice/logger"
+	"github.com/fske/harbor/src/common/utils/log"
+	"github.com/fske/harbor/src/jobservice/logger"
 )
 
 //JobLogger is an implementation of logger.Interface.

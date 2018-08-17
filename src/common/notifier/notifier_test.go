@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/vmware/harbor/src/common/scheduler"
+	"github.com/fske/harbor/src/common/scheduler"
 )
 
 var statefulData int32

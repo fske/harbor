@@ -13,7 +13,7 @@ This [Helm](https://github.com/kubernetes/helm) chart installs [Harbor](http://v
 
 ## Known Issues
 
-- This chart doesn't work with Kubernetes security update release 1.8.9+ and 1.9.4+. Refer to [issue 4496](https://github.com/vmware/harbor/issues/4496).
+- This chart doesn't work with Kubernetes security update release 1.8.9+ and 1.9.4+. Refer to [issue 4496](https://github.com/fske/harbor/issues/4496).
 
 ## Setup a Kubernetes cluster
 
@@ -33,7 +33,7 @@ helm init
 ```
 Download Harbor helm chart code.
 ```bash
-git clone https://github.com/vmware/harbor
+git clone https://github.com/fske/harbor
 cd contrib/helm/harbor
 ```
 Download external dependent charts required by Harbor chart.
@@ -102,7 +102,7 @@ The following tables lists the configurable parameters of the Harbor chart and t
 | `persistence.enabled` | enable persistent data storage | `false` |
 | `secretKey` | The secret key used for encryption. Must be a string of 16 chars. | `not-a-secure-key` |
 | **Adminserver** |
-| `adminserver.image.repository` | Repository for adminserver image | `vmware/harbor-adminserver` |
+| `adminserver.image.repository` | Repository for adminserver image | `fske/harbor-adminserver` |
 | `adminserver.image.tag` | Tag for adminserver image | `v1.4.0` |
 | `adminserver.image.pullPolicy` | Pull Policy for adminserver image | `IfNotPresent` |
 | `adminserver.emailHost` | email server | `smtp.mydomain.com` |
@@ -114,7 +114,7 @@ The following tables lists the configurable parameters of the Harbor chart and t
 | `adminserver.key` | adminsever key | `not-a-secure-key` |
 | `adminserver.emailPwd` | password for email | `not-a-secure-password` |
 | `adminserver.adminPassword` | password for admin user | `Harbor12345` |
-| `adminserver.authenticationMode` | authentication mode for Harbor ( `db_auth` for local database, `ldap_auth` for LDAP, etc...) [Docs](https://github.com/vmware/harbor/blob/master/docs/user_guide.md#user-account) | `db_auth` |
+| `adminserver.authenticationMode` | authentication mode for Harbor ( `db_auth` for local database, `ldap_auth` for LDAP, etc...) [Docs](https://github.com/fske/harbor/blob/master/docs/user_guide.md#user-account) | `db_auth` |
 | `adminserver.selfRegistration` | Allows users to register by themselves, otherwise only administrators can add users | `on` |
 | `adminserver.ldap.url` | LDAP server URL for `ldap_auth` authentication | `ldaps://ldapserver` |
 | `adminserver.ldap.searchDN` | LDAP Search DN | `` |
@@ -127,14 +127,14 @@ The following tables lists the configurable parameters of the Harbor chart and t
 | `adminserver.resources` | [resources](https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/) to allocate for container   | undefined |
 | `adminserver.volumes` | used to create PVCs if persistence is enabled (see instructions in values.yaml) | see values.yaml |
 | **Jobservice** |
-| `jobservice.image.repository` | Repository for jobservice image | `vmware/harbor-jobservice` |
+| `jobservice.image.repository` | Repository for jobservice image | `fske/harbor-jobservice` |
 | `jobservice.image.tag` | Tag for jobservice image | `v1.4.0` |
 | `jobservice.image.pullPolicy` | Pull Policy for jobservice image | `IfNotPresent` |
 | `jobservice.key` | jobservice key | `not-a-secure-key` |
 | `jobservice.secret` | jobservice secret | `not-a-secure-secret` |
 | `jobservice.resources` | [resources](https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/) to allocate for container   | undefined |
 | **UI** |
-| `ui.image.repository` | Repository for ui image | `vmware/harbor-ui` |
+| `ui.image.repository` | Repository for ui image | `fske/harbor-ui` |
 | `ui.image.tag` | Tag for ui image | `v1.4.0` |
 | `ui.image.pullPolicy` | Pull Policy for ui image | `IfNotPresent` |
 | `ui.key` | ui key | `not-a-secure-key` |
@@ -142,7 +142,7 @@ The following tables lists the configurable parameters of the Harbor chart and t
 | `ui.privateKeyPem` | ui private key | see values.yaml |
 | `ui.resources` | [resources](https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/) to allocate for container   | undefined |
 | **MySQL** |
-| `mysql.image.repository` | Repository for mysql image | `vmware/harbor-mysql` |
+| `mysql.image.repository` | Repository for mysql image | `fske/harbor-mysql` |
 | `mysql.image.tag` | Tag for mysql image | `v1.4.0` |
 | `mysql.image.pullPolicy` | Pull Policy for mysql image | `IfNotPresent` |
 | `mysql.host` | MySQL Server | `~` |

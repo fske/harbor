@@ -15,8 +15,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/vmware/harbor/src/jobservice/env"
-	"github.com/vmware/harbor/src/jobservice/models"
+	"github.com/fske/harbor/src/jobservice/env"
+	"github.com/fske/harbor/src/jobservice/models"
 )
 
 const fakeSecret = "I'mfakesecret"

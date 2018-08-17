@@ -15,13 +15,13 @@
 package main
 
 import (
-	"github.com/vmware/harbor/src/ui/api"
-	"github.com/vmware/harbor/src/ui/config"
-	"github.com/vmware/harbor/src/ui/controllers"
-	"github.com/vmware/harbor/src/ui/service/notifications/clair"
-	"github.com/vmware/harbor/src/ui/service/notifications/jobs"
-	"github.com/vmware/harbor/src/ui/service/notifications/registry"
-	"github.com/vmware/harbor/src/ui/service/token"
+	"github.com/fske/harbor/src/ui/api"
+	"github.com/fske/harbor/src/ui/config"
+	"github.com/fske/harbor/src/ui/controllers"
+	"github.com/fske/harbor/src/ui/service/notifications/clair"
+	"github.com/fske/harbor/src/ui/service/notifications/jobs"
+	"github.com/fske/harbor/src/ui/service/notifications/registry"
+	"github.com/fske/harbor/src/ui/service/token"
 
 	"github.com/astaxie/beego"
 )

@@ -17,16 +17,16 @@ package core
 import (
 	"fmt"
 
-	common_models "github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/common/utils/log"
-	"github.com/vmware/harbor/src/replication"
-	"github.com/vmware/harbor/src/replication/models"
-	"github.com/vmware/harbor/src/replication/policy"
-	"github.com/vmware/harbor/src/replication/replicator"
-	"github.com/vmware/harbor/src/replication/source"
-	"github.com/vmware/harbor/src/replication/target"
-	"github.com/vmware/harbor/src/replication/trigger"
-	"github.com/vmware/harbor/src/ui/utils"
+	common_models "github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/utils/log"
+	"github.com/fske/harbor/src/replication"
+	"github.com/fske/harbor/src/replication/models"
+	"github.com/fske/harbor/src/replication/policy"
+	"github.com/fske/harbor/src/replication/replicator"
+	"github.com/fske/harbor/src/replication/source"
+	"github.com/fske/harbor/src/replication/target"
+	"github.com/fske/harbor/src/replication/trigger"
+	"github.com/fske/harbor/src/ui/utils"
 )
 
 // Controller defines the methods that a replicatoin controllter should implement

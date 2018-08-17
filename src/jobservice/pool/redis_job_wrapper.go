@@ -7,11 +7,11 @@ import (
 	"time"
 
 	"github.com/gocraft/work"
-	"github.com/vmware/harbor/src/jobservice/env"
-	"github.com/vmware/harbor/src/jobservice/errs"
-	"github.com/vmware/harbor/src/jobservice/job"
-	"github.com/vmware/harbor/src/jobservice/logger"
-	"github.com/vmware/harbor/src/jobservice/opm"
+	"github.com/fske/harbor/src/jobservice/env"
+	"github.com/fske/harbor/src/jobservice/errs"
+	"github.com/fske/harbor/src/jobservice/job"
+	"github.com/fske/harbor/src/jobservice/logger"
+	"github.com/fske/harbor/src/jobservice/opm"
 )
 
 //RedisJob is a job wrapper to wrap the job.Interface to the style which can be recognized by the redis pool.

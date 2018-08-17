@@ -21,12 +21,12 @@ import (
 	"strings"
 
 	"github.com/docker/distribution/registry/auth/token"
-	"github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/common/security"
-	"github.com/vmware/harbor/src/common/utils/log"
-	"github.com/vmware/harbor/src/ui/config"
-	"github.com/vmware/harbor/src/ui/filter"
-	"github.com/vmware/harbor/src/ui/promgr"
+	"github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/security"
+	"github.com/fske/harbor/src/common/utils/log"
+	"github.com/fske/harbor/src/ui/config"
+	"github.com/fske/harbor/src/ui/filter"
+	"github.com/fske/harbor/src/ui/promgr"
 )
 
 var creatorMap map[string]Creator

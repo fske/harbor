@@ -21,8 +21,8 @@ import (
 	"sync"
 
 	"github.com/astaxie/beego/orm"
-	"github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/common/utils/log"
+	"github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/utils/log"
 )
 
 const (

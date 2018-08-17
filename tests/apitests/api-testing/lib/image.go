@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/vmware/harbor/tests/apitests/api-testing/client"
-	"github.com/vmware/harbor/tests/apitests/api-testing/models"
+	"github.com/fske/harbor/tests/apitests/api-testing/client"
+	"github.com/fske/harbor/tests/apitests/api-testing/models"
 )
 
 //ImageUtil : For repository and tag functions

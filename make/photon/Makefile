@@ -36,23 +36,23 @@ DOCKERFILEPATH=$(MAKEPATH)/photon
 
 DOCKERFILEPATH_ADMINSERVER=$(DOCKERFILEPATH)/adminserver
 DOCKERFILENAME_ADMINSERVER=Dockerfile
-DOCKERIMAGENAME_ADMINSERVER=vmware/harbor-adminserver
+DOCKERIMAGENAME_ADMINSERVER=fske/harbor-adminserver
 
 DOCKERFILEPATH_UI=$(DOCKERFILEPATH)/ui
 DOCKERFILENAME_UI=Dockerfile
-DOCKERIMAGENAME_UI=vmware/harbor-ui
+DOCKERIMAGENAME_UI=fske/harbor-ui
 
 DOCKERFILEPATH_JOBSERVICE=$(DOCKERFILEPATH)/jobservice
 DOCKERFILENAME_JOBSERVICE=Dockerfile
-DOCKERIMAGENAME_JOBSERVICE=vmware/harbor-jobservice
+DOCKERIMAGENAME_JOBSERVICE=fske/harbor-jobservice
 
 DOCKERFILEPATH_LOG=$(DOCKERFILEPATH)/log
 DOCKERFILENAME_LOG=Dockerfile
-DOCKERIMAGENAME_LOG=vmware/harbor-log
+DOCKERIMAGENAME_LOG=fske/harbor-log
 
 DOCKERFILEPATH_DB=$(DOCKERFILEPATH)/db
 DOCKERFILENAME_DB=Dockerfile
-DOCKERIMAGENAME_DB=vmware/harbor-db
+DOCKERIMAGENAME_DB=fske/harbor-db
 
 DOCKERFILEPATH_POSTGRESQL=$(DOCKERFILEPATH)/postgresql
 DOCKERFILENAME_POSTGRESQL=Dockerfile
@@ -181,6 +181,8 @@ define _get_binary
 endef
 
 build: _build_postgresql _build_db _build_adminiserver _build_ui _build_jobservice _build_log _build_nginx _build_registry _build_notary _build_clair _build_redis
+
+build_ui: _build_ui
 
 cleanimage:
 	@echo "cleaning image for photon..."

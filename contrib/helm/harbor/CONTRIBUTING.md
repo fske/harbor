@@ -1,6 +1,6 @@
 # Contributing to Helm Chart for Harbor
 
-Please follow [Harbor contributing guide](https://github.com/vmware/harbor/blob/master/CONTRIBUTING.md) to learn how to make code contribution.
+Please follow [Harbor contributing guide](https://github.com/fske/harbor/blob/master/CONTRIBUTING.md) to learn how to make code contribution.
 
 # Contributers
 

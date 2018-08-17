@@ -19,7 +19,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/vmware/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/models"
 )
 
 func TestDeleteProject(t *testing.T) {

@@ -15,7 +15,7 @@
 package dao
 
 import (
-	"github.com/vmware/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/models"
 )
 
 const (

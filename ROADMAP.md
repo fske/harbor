@@ -6,7 +6,7 @@ This document provides description of items that are gathered from the community
 
 ### How to help?
 
-Discussion on the roadmap can take place in threads under [Issues](https://github.com/vmware/harbor/issues). Please open and comment on an issue if you want to provide suggestions and feedback to an item in the roadmap. Please review the roadmap to avoid potential duplicated effort.
+Discussion on the roadmap can take place in threads under [Issues](https://github.com/fske/harbor/issues). Please open and comment on an issue if you want to provide suggestions and feedback to an item in the roadmap. Please review the roadmap to avoid potential duplicated effort.
 
 ### How to add an item to the roadmap?
 Please open an issue to track any initiative on the roadmap of Harbor. We will work with and rely on our community to focus our efforts to improve Harbor.

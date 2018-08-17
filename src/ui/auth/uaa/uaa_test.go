@@ -16,12 +16,12 @@ package uaa
 
 import (
 	"github.com/stretchr/testify/assert"
-	"github.com/vmware/harbor/src/common/dao"
-	"github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/common/utils/log"
-	utilstest "github.com/vmware/harbor/src/common/utils/test"
-	"github.com/vmware/harbor/src/common/utils/uaa"
-	"github.com/vmware/harbor/src/ui/config"
+	"github.com/fske/harbor/src/common/dao"
+	"github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/utils/log"
+	utilstest "github.com/fske/harbor/src/common/utils/test"
+	"github.com/fske/harbor/src/common/utils/uaa"
+	"github.com/fske/harbor/src/ui/config"
 
 	"os"
 	"strconv"

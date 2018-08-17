@@ -19,11 +19,11 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/vmware/harbor/src/common"
-	"github.com/vmware/harbor/src/common/dao"
-	"github.com/vmware/harbor/src/common/models"
-	"github.com/vmware/harbor/src/common/utils"
-	uiutils "github.com/vmware/harbor/src/ui/utils"
+	"github.com/fske/harbor/src/common"
+	"github.com/fske/harbor/src/common/dao"
+	"github.com/fske/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/utils"
+	uiutils "github.com/fske/harbor/src/ui/utils"
 )
 
 // RepositoryLabelAPI handles requests for adding/removing label to/from repositories and images

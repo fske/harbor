@@ -17,8 +17,8 @@ package api
 import (
 	"net/http"
 
-	"github.com/vmware/harbor/src/adminserver/systeminfo/imagestorage"
-	"github.com/vmware/harbor/src/common/utils/log"
+	"github.com/fske/harbor/src/adminserver/systeminfo/imagestorage"
+	"github.com/fske/harbor/src/common/utils/log"
 )
 
 // Capacity handles /api/systeminfo/capacity and returns system capacity

@@ -1,8 +1,8 @@
 package trigger
 
 import (
-	"github.com/vmware/harbor/src/common/dao"
-	"github.com/vmware/harbor/src/common/models"
+	"github.com/fske/harbor/src/common/dao"
+	"github.com/fske/harbor/src/common/models"
 )
 
 //DefaultWatchList is the default instance of WatchList

@@ -1,6 +1,6 @@
 """ The missing harbor python SDK
 
-See: https://github.com/vmware/harbor/tree/master/contrib/sdk/harbor-py
+See: https://github.com/fske/harbor/tree/master/contrib/sdk/harbor-py
 """
 
 from setuptools import setup, find_packages
@@ -17,7 +17,7 @@ setup(
     description='The missing harbor python SDK',
 
     # The project's main homepage.
-    url='https://github.com/vmware/harbor',
+    url='https://github.com/fske/harbor',
 
     # Author details
     author='tobe',

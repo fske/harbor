@@ -54,7 +54,7 @@ ingress:
 
 adminserver:
   image:
-    repository: vmware/harbor-adminserver
+    repository: fske/harbor-adminserver
     tag: *harbor_image_tag
     pullPolicy: IfNotPresent
   emailHost: "smtp.mydomain.com"
@@ -92,7 +92,7 @@ adminserver:
 #
 jobservice:
   image:
-    repository: vmware/harbor-jobservice
+    repository: fske/harbor-jobservice
     tag: *harbor_image_tag
     pullPolicy: IfNotPresent
   secret: not-a-secure-secret
@@ -105,7 +105,7 @@ jobservice:
 #
 ui:
   image:
-    repository: vmware/harbor-ui
+    repository: fske/harbor-ui
     tag: *harbor_image_tag
     pullPolicy: IfNotPresent
   secret: not-a-secure-secret
@@ -172,7 +172,7 @@ ui:
 #
 mysql:
   image:
-    repository: vmware/harbor-db
+    repository: fske/harbor-db
     tag: *harbor_image_tag
     pullPolicy: IfNotPresent
   # If left blank will use the included mysql service name.

@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/vmware/harbor/tests/apitests/api-testing/client"
-	"github.com/vmware/harbor/tests/apitests/api-testing/models"
+	"github.com/fske/harbor/tests/apitests/api-testing/client"
+	"github.com/fske/harbor/tests/apitests/api-testing/models"
 )
 
 //SystemUtil : For getting system info

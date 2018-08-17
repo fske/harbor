@@ -15,9 +15,9 @@
 package event
 
 import (
-	"github.com/vmware/harbor/src/common/notifier"
-	"github.com/vmware/harbor/src/common/utils/log"
-	"github.com/vmware/harbor/src/replication/event/topic"
+	"github.com/fske/harbor/src/common/notifier"
+	"github.com/fske/harbor/src/common/utils/log"
+	"github.com/fske/harbor/src/replication/event/topic"
 )
 
 //Subscribe related topics
