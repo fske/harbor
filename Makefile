@@ -106,7 +106,7 @@ MIGRATORVERSION=v1.5.0
 REDISVERSION=$(VERSIONTAG)
 
 #clarity parameters
-CLARITYIMAGE=vmware/harbor-clarity-ui-builder[:tag]
+CLARITYIMAGE=vmware/harbor-clarity-ui-builder:1.4.0
 CLARITYSEEDPATH=/harbor_src
 CLARITYUTPATH=${CLARITYSEEDPATH}/ui_ng/lib
 CLARITYBUILDSCRIPT=/entrypoint.sh
@@ -129,7 +129,7 @@ GOINSTALL=$(GOCMD) install
 GOTEST=$(GOCMD) test
 GODEP=$(GOTEST) -i
 GOFMT=gofmt -w
-GOBUILDIMAGE=reg.mydomain.com/library/harborgo[:tag]
+GOBUILDIMAGE=golang:1.9.2
 GOBUILDPATH=$(GOBASEPATH)/harbor
 GOIMAGEBUILDCMD=/usr/local/go/bin/go
 GOIMAGEBUILD=$(GOIMAGEBUILDCMD) build
